@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hospital Patient List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0275d8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #0275d8;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .add-patient-btn {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .add-patient-btn:hover {
+            background-color: #4cae4c;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hospital Patient List</h1>
+    </header>
+
+    <div class="container">
+        <!-- Button to add a new patient (mock functionality) -->
+        <button class="add-patient-btn" onclick="alert('Add Patient functionality will be implemented.')">Add New Patient</button>
+
+        <!-- Patient List Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Patient ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Diagnosis</th>
+                    <th>Room Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example Patient Records -->
+                <tr>
+                    <td>P001</td>
+                    <td>John Doe</td>
+                    <td>45</td>
+                    <td>Male</td>
+                    <td>Hypertension</td>
+                    <td>101</td>
+                </tr>
+                <tr>
+                    <td>P002</td>
+                    <td>Jane Smith</td>
+                    <td>38</td>
+                    <td>Female</td>
+                    <td>Diabetes</td>
+                    <td>102</td>
+                </tr>
+                <tr>
+                    <td>P003</td>
+                    <td>Mike Johnson</td>
+                    <td>60</td>
+                    <td>Male</td>
+                    <td>Cardiac Arrest</td>
+                    <td>103</td>
+                </tr>
+                <tr>
+                    <td>P004</td>
+                    <td>Alice Brown</td>
+                    <td>29</td>
+                    <td>Female</td>
+                    <td>Asthma</td>
+                    <td>104</td>
+                </tr>
+                <tr>
+                    <td>P005</td>
+                    <td>David Wilson</td>
+                    <td>53</td>
+                    <td>Male</td>
+                    <td>Pneumonia</td>
+                    <td>105</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hospital Management System. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
