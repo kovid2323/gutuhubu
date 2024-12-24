@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Decors Inventory</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .search-container input {
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .add-item-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .add-item-btn:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #333;
+            color: white;
+        }
+
+        table td img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .inventory-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .inventory-item h3 {
+            margin: 0;
+        }
+
+        .item-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .item-actions button {
+            background-color: #f0ad4e;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .item-actions button:hover {
+            background-color: #ec971f;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Car Decor Inventory</h1>
+    </header>
+
+    <div class="container">
+        <!-- Search and Add Item Section -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for car decor...">
+            <button class="add-item-btn" onclick="addItem()">Add New Item</button>
+        </div>
+
+        <!-- Inventory Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="inventory-table-body">
+                <!-- Example Inventory Items -->
+                <tr>
+                    <td><img src="https://via.placeholder.com/100" alt="Car Decor 1"></td>
+                    <td>Car Seat Covers</td>
+                    <td>Premium leather seat covers for luxury cars</td>
+                    <td>$49.99</td>
+                    <td class="item-actions">
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/100" alt="Car Decor 2"></td>
+                    <td>Steering Wheel Cover</td>
+                    <td>Stylish steering wheel cover for added comfort</td>
+                    <td>$19.99</td>
+                    <td class="item-actions">
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Car Decors Inventory</p>
+    </footer>
+
+    <script>
+        function addItem() {
+            alert("Functionality to add a new item will be implemented.");
+        }
+    </script>
+
+</body>
+
+</html>
